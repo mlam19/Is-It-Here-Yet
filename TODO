@@ -1,3 +1,4 @@
+- fix appearance of notifications (currently black text on black background)
 - allow users to dismiss notifications individually
 - allow users to store lists of preselected stops using SQLite,
   instead of just one stop using SharedPreferences
