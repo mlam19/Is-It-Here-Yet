@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:id="@+id/refreshMenu" android:title="@string/refreshMenu" />
+	<item android:id="@+id/saveMenu" android:title="@string/saveMenu" />
+	<item android:id="@+id/aboutMenu" android:title="@string/aboutMenu" />
+	<item android:id="@+id/exitMenu" android:title="@string/exitMenu" />
+</menu>

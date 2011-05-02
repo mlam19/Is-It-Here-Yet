@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:layout_marginLeft="2dp" android:layout_marginRight="2dp">
+	<LinearLayout android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:layout_alignParentTop="true" android:layout_height="wrap_content" android:id="@+id/resultData">
+		<TextView android:layout_height="wrap_content" android:id="@+id/agencyText"
+			android:gravity="center" android:layout_width="match_parent"></TextView>
+		<TextView android:id="@+id/routeText" android:layout_height="wrap_content"
+			android:layout_width="match_parent" android:gravity="center"></TextView>
+		<TextView android:layout_height="wrap_content" android:id="@+id/dirText"
+			android:gravity="center" android:layout_width="match_parent"></TextView>
+		<TextView android:layout_height="wrap_content" android:id="@+id/stopText"
+			android:gravity="center" android:layout_width="match_parent"></TextView>
+		<TextView android:layout_width="match_parent"
+			android:layout_height="wrap_content" android:textStyle="bold"
+			android:textSize="40dp" android:gravity="center" android:id="@+id/summaryText"></TextView>
+		<TextView android:layout_height="wrap_content" android:id="@+id/timeText"
+			android:gravity="center" android:layout_width="match_parent"></TextView>
+		<TextView android:layout_height="wrap_content"
+			android:gravity="center" android:layout_width="match_parent"
+			android:textSize="14dp" android:id="@+id/msgText"></TextView>
+	</LinearLayout>
+	<ListView android:layout_width="match_parent" android:id="@+id/itemList"
+			android:layout_height="match_parent" android:layout_below="@id/resultData"
+			android:layout_above="@+id/resultRefreshButtonArea"></ListView>
+	<RelativeLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:layout_alignParentBottom="true" android:id="@+id/resultRefreshButtonArea">
+		<Button android:textSize="16dp" android:text="@string/updateButton"
+			android:layout_width="match_parent" android:id="@+id/refreshButton"
+			android:layout_height="wrap_content" android:textStyle="bold"
+			android:gravity="center"></Button>
+	</RelativeLayout>
+</RelativeLayout>
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Is It Here Yet?</string>
+    <string name="agencyLabel">Agency</string>
+    <string name="routeLabel">Route</string>
+    <string name="directionLabel">Direction</string>
+    <string name="stopLabel">Stop</string>
+    <string name="resultsButton">Is It Here Yet?</string>
+    <string name="updateButton">Update</string>
+    <string name="refreshMenu">Refresh agency list</string>
+    <string name="aboutMenu">About</string>
+    <string name="exitMenu">Exit</string>
+    <string name="saveMenu">Set stop as default</string>
+    <string name="aboutButton">Ok</string>
+</resources>

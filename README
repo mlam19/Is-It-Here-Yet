@@ -1,0 +1,36 @@
+Is It Here Yet?
+===============
+
+Copyright 2011 Matthew Lam
+http://www.reservedbits.com/javawork/isithereyet
+
+Overview
+--------
+
+Is It Here Yet? is a simple Android application that reads the
+NextBus public XML feed and displays the arrival times for
+transit vehicles for a chosen stop.
+
+Is It Here Yet? is free software: you can redistribute it and/or
+modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+Requirements
+------------
+
+Is It Here Yet? was developed for Android 3.0. It has only been
+tested on an Android 3.0 emulator.
+
+Warning
+-------
+
+NextBus periodically improves the XML feed format. This may cause
+Is It Here Yet? to fail, and require fixing.
+
+Disclaimer
+----------
+
+Is It Here Yet? merely uses NextBus' public data feed and is
+otherwise not associated with NextBus. To learn more about NextBus
+visit: http://www.nextbus.com/homepage/

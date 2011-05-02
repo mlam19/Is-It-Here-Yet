@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="2dp" android:layout_marginRight="2dp">
+	<ScrollView android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:id="@+id/scrollView1"
+		android:layout_alignParentTop="true">
+		<LinearLayout android:layout_width="match_parent"
+			android:layout_height="match_parent" android:orientation="vertical">
+			<TextView android:layout_height="wrap_content" android:id="@+id/agencyLabel"
+				android:layout_width="wrap_content" android:text="@string/agencyLabel"
+				android:textStyle="bold" android:textSize="14dp"
+				></TextView>
+			<Spinner android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:id="@+id/agencySpinner"></Spinner>
+			<TextView android:layout_height="wrap_content" android:id="@+id/routeLabel"
+				android:layout_width="wrap_content" android:text="@string/routeLabel"
+				android:textStyle="bold" android:textSize="14dp"
+				></TextView>
+			<Spinner android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:id="@+id/routeSpinner"></Spinner>
+			<TextView android:layout_height="wrap_content" android:id="@+id/directionLabel"
+				android:layout_width="wrap_content" android:text="@string/directionLabel"
+				android:textStyle="bold" android:textSize="14dp"
+				></TextView>
+			<Spinner android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:id="@+id/directionSpinner"></Spinner>
+			<TextView android:layout_height="wrap_content" android:id="@+id/stopLabel"
+				android:layout_width="wrap_content" android:text="@string/stopLabel"
+				android:textStyle="bold" android:textSize="14dp"
+				></TextView>
+			<Spinner android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:id="@+id/stopSpinner"></Spinner>
+		</LinearLayout>
+	</ScrollView>
+	<RelativeLayout android:layout_height="wrap_content"
+		android:id="@+id/relativeLayout1" android:layout_width="match_parent"
+		android:layout_alignParentBottom="true">
+		<Button android:id="@+id/resultButton" android:layout_height="wrap_content"
+			android:textStyle="bold" android:textSize="16dp"
+			android:layout_width="match_parent" android:text="@string/resultsButton" android:layout_below="@id/stopSpinner"></Button>
+	</RelativeLayout>
+</RelativeLayout>
