@@ -75,6 +75,8 @@ public class ResultActivity extends Activity {
 	private final int SOON_COLOUR=Color.YELLOW;
 	private final int NO_COLOUR=Color.RED;
 
+	private String stopNameText;
+	
 	private Calendar lastUpdate;
 	private TimeEntry[] lastData;
 
@@ -156,7 +158,9 @@ public class ResultActivity extends Activity {
 		agencyName.setText(dm.getAgencyName());	
 		routeName.setText(dm.getRouteName());
 		directionName.setText(dm.getDirectionName());
-		stopName.setText(dm.getStopName());
+		
+		stopNameText=dm.getStopName();
+		stopName.setText(stopNameText);
 
 		Hashtable<IPredictionDirection,IPredictionItem[]> list=data.getList();
 
@@ -301,10 +305,11 @@ public class ResultActivity extends Activity {
 			new Notification.Builder(this.getApplicationContext())
 		.setAutoCancel(true)
 		.setContentTitle(destination)
-		.setContentText("Arrives at")
+		.setContentText(stopNameText)
 		.setWhen(selectedEntry.getData().getArrival().getTimeInMillis())
 		.setSmallIcon(R.drawable.ic_note)
-		.setTicker("The "+time+" ride to "+destination+" has arrived.");
+		.setTicker("The "+time+" ride to "+destination+" has arrived"+
+				" at "+stopNameText+".");
 		
 		new Thread(new Runnable() {
 			public void run() {
